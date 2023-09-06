@@ -154,6 +154,12 @@ img, textarea, input, table {
         padding-bottom: 15px;
     }
 
+    .error_text {
+        padding-top: 4px;
+        font-size: 12px;
+        color: #f00;
+    }
+
     &.checkbox {
 
         ul {
@@ -363,6 +369,43 @@ img, textarea, input, table {
             z-index: 105;
         }
     }
+
+    .thank_block {
+        padding: 12px;
+        color: #000;
+        text-align: center;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: none;
+    }
+
+    &.send_done {
+
+        .thank_block {
+            display: block;
+        }
+
+        form {
+            display: none;
+        }
+
+        .formExtraWrapper {
+            &:before {
+                display: none;
+            }
+
+            .close-form {
+                top: 9px;
+                background: 50% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cline x1='1.65617' y1='19.2929' x2='19.0728' y2='1.87623' stroke='%23000000' stroke-width='2'/%3E%3Cpath d='M18.3633 19.5L1.36328 0.999999' stroke='%23000000' stroke-width='2'/%3E%3C/svg%3E") no-repeat;
+            }
+        }
+
+        .form-b {
+            padding: 0;
+        }
+    }
 }
 
 .form-b {
@@ -404,6 +447,12 @@ img, textarea, input, table {
 
         input {
             text-align: center;
+        }
+
+        &.error {
+            input {
+                border-color: #f00;
+            }
         }
     }
 
@@ -755,7 +804,7 @@ img, textarea, input, table {
             }
         }
 
-        .form_btn_link{
+        > .form_btn_link{
             margin: 0 90px 0 0;
             cursor: pointer;
             padding: 17px 12px;
@@ -766,6 +815,7 @@ img, textarea, input, table {
             font-weight: 400;
             line-height: normal;
             white-space: nowrap;
+            display: none;
 
             @media all and (max-width: 1440px){
                 margin-right: 60px;
@@ -781,6 +831,7 @@ img, textarea, input, table {
 
             @media all and (max-width: 1024px){
                 padding: 6px 12px;
+                display: block;
             }
         }
 
@@ -860,7 +911,7 @@ img, textarea, input, table {
 
     img {
         @media all and (min-width: 1025px) {
-            margin: -102px 0 0;
+            margin: -94px 0 0;
         }
     }
 }
@@ -1476,7 +1527,7 @@ img, textarea, input, table {
             }
         }
 
-        .form_btn_link{
+        > .form_btn_link{
             margin: 0 90px 0 0;
             cursor: pointer;
             padding: 17px 12px;
@@ -1487,6 +1538,7 @@ img, textarea, input, table {
             font-weight: 400;
             line-height: normal;
             white-space: nowrap;
+            display: none;
 
             @media all and (max-width: 1440px){
                 margin-right: 60px;
@@ -1502,6 +1554,7 @@ img, textarea, input, table {
 
             @media all and (max-width: 1024px){
                 padding: 6px 12px;
+                display: block;
             }
         }
 

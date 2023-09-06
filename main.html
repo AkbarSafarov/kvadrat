@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,8 +23,9 @@
                 </div>
                 <div class="menu_header">
                     <ul>
-                        <li><a href="">Варианты</a></li>
-                        <li><a href="">Проект</a></li>
+                        <li><a href="#video_block">Проект</a></li>
+                        <li><a href="#" class="form_btn_link">Оставить заявку</a></li>
+                        <li><a href="files/pre.pdf" download target="_blank">Скачать презентацию</a></li>
                     </ul>
                 </div>
                 <div class="form_btn_link">Оставить заявку</div>
@@ -165,8 +167,9 @@
                 </div>
                 <div class="menu_header">
                     <ul>
-                        <li><a href="">Варианты</a></li>
-                        <li><a href="">Проект</a></li>
+                        <li><a href="#video_block">Проект</a></li>
+                        <li><a href="#" class="form_btn_link">Оставить заявку</a></li>
+                        <li><a href="files/pre.pdf" download target="_blank">Скачать презентацию</a></li>
                     </ul>
                 </div>
                 <div class="form_btn_link">Оставить заявку</div>
@@ -186,17 +189,19 @@
                         <input type="text" placeholder="Ваше имя" required>
                     </div>
                     <div class="field required">
-                        <input type="text" placeholder="Ваш телефон" required>
+                        <input type="text" class="phone_input" placeholder="Ваш телефон" required>
                     </div>
                     <div class="button_form">
-                        <button class="btn">Оставить заявку</button>
+                        <button class="btn form_button">Оставить заявку</button>
                     </div>
                     <div class="text">Отправляя данную форму, вы соглашаетесь на обработку персональных данных</div>
                 </form>
+                <div class="thank_block">Ваша заявка отправлена</div>
             </div>
         </div>
     </div>
-    <script src="js/main.js" async></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
