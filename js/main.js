@@ -46,6 +46,13 @@ formPopup('.form_btn_link', '.form_modal');
 
 
 $(function () {
+    $('.anchor_link').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        },500);
+    });
+
     $('input.phone_input').on('blur', function(){
         let phoneWrapper = $(this).parents('.field'),
             thisNumber = $(this).val().split(''),
